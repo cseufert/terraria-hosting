@@ -15,7 +15,7 @@ services:
       - TMOD_WORLDNAME=Earth
       - TMOD_WORLDSIZE=3
       - TMOD_WORLDSEED=05162020
-      - TMOD_DIFFICULTY=1
+      - TMOD_DIFFICULTY=0
     volumes:
       - ./data:/data
       - ./steam:/root/.steam
