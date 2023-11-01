@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  server:
+    image: jacobsmile/tmodloader1.4
+      #    user: 1000:1000
+    network_mode: bridge
+    environment:
+      - TMOD_SHUTDOWN_MESSAGE=Goodbye!
+      - TMOD_AUTOSAVE_INTERVAL=15
+      - TMOD_AUTODOWNLOAD=2908170107, 2563309347, 2669644269, 2824688266, 2619954303, 2824688072, 2687866031, 2565639705
+      - TMOD_ENABLEMODS=2908170107, 2563309347, 2669644269, 2824688266, 2619954303, 2824688072, 2687866031, 2565639705
+      - TMOD_MOTD=Welcome to Wed Night Games!
+      - TMOD_PASS=apples
+      - TMOD_MAXPLAYERS=16
+      - TMOD_WORLDNAME=Earth
+      - TMOD_WORLDSIZE=3
+      - TMOD_WORLDSEED=05162020
+      - TMOD_DIFFICULTY=3
+    volumes:
+      - ./data:/data
+    ports:
+      - 7777:7777
+
